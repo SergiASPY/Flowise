@@ -21,9 +21,29 @@
       margin-top: 40vh;
       font-family: Arial, sans-serif;
     }
+        .boton {
+      padding: 15px 30px;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+
+      transition: all 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
+    <a href="https://odin.aspyprevencion.com" target="_blank" class="boton">
+        Pagina de soporte Odín
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
