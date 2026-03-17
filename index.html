@@ -2,10 +2,30 @@
 <html>
 <head>
 <title>Igor 3.0</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+
+      /* Imagen en la misma carpeta */
+      background-image: url("fondo.jpg");
+
+      /* Ajustes para que se vea bien */
+      background-size: cover;       /* ocupa toda la pantalla */
+      background-position: center;  /* centrada */
+      background-repeat: no-repeat; /* sin repetición */
+      height: 100vh;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin-top: 40vh;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 <body>
-    background-image: url("FONDO_IT_Odin.jpeg");
-    background-size: cover;
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
