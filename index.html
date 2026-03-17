@@ -4,10 +4,9 @@
 <title>Igor 3.0</title>
 </head>
 <body>
-<flowise-fullchatbot></flowise-fullchatbot>
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.initFull({
+    Chatbot.init({
         chatflowid: "90166869-60ec-47e9-a938-941cf43e74cd",
         apiHost: "http://localhost:3000",
         chatflowConfig: {
@@ -24,7 +23,7 @@
                 size: 48,
                 dragAndDrop: true,
                 iconColor: 'white',
-                customIconSrc: 'igorbot.png',
+                customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                 autoWindowOpen: {
                     autoOpen: true,
                     openDelay: 2,
@@ -33,17 +32,17 @@
             },
             tooltip: {
                 showTooltip: true,
-                tooltipMessage: 'Hola!👋!',
+                tooltipMessage: 'Bip!Bip! 👋!',
                 tooltipBackgroundColor: 'black',
                 tooltipTextColor: 'white',
                 tooltipFontSize: 16
             },
             disclaimer: {
-                title: 'Disclaimer',
-                message: "Para preguntarme dudas, debes aceptar los <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terminos & Condiciones</a>",
+                title: 'Atención',
+                message: "Para usar esta ayuda virtual debes aceptar los <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terminos & Condiciones</a>",
                 textColor: 'black',
                 buttonColor: '#3b82f6',
-                buttonText: 'Empezar a chatear',
+                buttonText: 'Empezar conversación',
                 buttonTextColor: 'white',
                 blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
                 backgroundColor: 'white'
@@ -52,26 +51,26 @@
             chatWindow: {
                 showTitle: true,
                 showAgentMessages: true,
-                title: 'Igor 3.0, asistente virtual de Arquitectura y Soporte',
-                titleAvatarSrc: '',
-                welcomeMessage: 'Bip! Bip! En que puedo ayudarte?',
-                errorMessage: 'No estoy disponible temporalmente Bip!Bi......',
+                title: 'Flowise Bot',
+                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                welcomeMessage: 'Bip!Bip! Soy Igor 3.0, el compañero virtual de tu equipo de Sistemas',
+                errorMessage: 'Estoy sin Bip! Biii...',
                 backgroundColor: '#ffffff',
-                background-image: 'FONDO_IT_Odin.jpeg',
-                height: '100%',
-                width: '100%',
+                backgroundImage: 'enter image path or link',
+                height: 700,
+                width: 400,
                 fontSize: 16,
                 starterPrompts: [
                 ],
                 starterPromptFontSize: 15,
-                clearChatOnReload: true,
+                clearChatOnReload: false,
                 sourceDocsTitle: 'Sources:',
                 renderHTML: true,
                 botMessage: {
                     backgroundColor: '#f7f8ff',
                     textColor: '#303235',
                     showAvatar: true,
-                    avatarSrc: 'igorbot.png'
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
                 },
                 userMessage: {
                     backgroundColor: '#3B81F6',
@@ -80,12 +79,12 @@
                     avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
                 },
                 textInput: {
-                    placeholder: 'Preguntame aqui....',
+                    placeholder: 'Type your question',
                     backgroundColor: '#ffffff',
                     textColor: '#303235',
                     sendButtonColor: '#3B81F6',
                     maxChars: 50,
-                    maxCharsWarningMessage: 'Tengo mis limitaciones Bip!Bip!, intenta acortar tu pregunta a menos de 50 caracteres, por favor.',
+                    maxCharsWarningMessage: 'Recuerda que mi capacidad es limitada, mira de resumirlo en menos de 50 caracteres',
                     autoFocus: true,
                     sendMessageSound: true,
                     sendSoundLocation: 'send_message.mp3',
@@ -101,14 +100,13 @@
                 },
                 footer: {
                     textColor: '#303235',
-                    text: 'Igor 3.0, asistente virtual de',
+                    text: 'Alimentado por Sistemas de ASPY, para mas dudas consultar en ',
                     company: 'Odín',
-                    companyLink: 'https://odin.aspyprevencion.com/'
+                    companyLink: 'https://odin.aspyprevencion.com'
                 }
             }
         }
     })
 </script>
-
 </body>
 </html>
