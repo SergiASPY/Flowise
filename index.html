@@ -5,13 +5,13 @@
     <style>
     body {
       margin: 0;
-      padding: 0;
+      height: 100vh;
 
       /* Imagen en la misma carpeta */
       background-image: url("FONDO_IT_Odin.jpeg");
 
       /* Ajustes para que se vea bien */
-      background-size: cover;      
+      background-size: cover;
       background-position:center;
     }
 
@@ -20,6 +20,19 @@
       text-align: center;
       font-family: Arial, sans-serif;
     }
+    .contenedor {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
         .boton {
       padding: 15px 30px;
       font-size: 18px;
@@ -42,8 +55,14 @@
   </style>
 </head>
 <body>
+    <div class="contenedor">
+  <div class="columna">
     <a href="https://odin.aspyprevencion.com" target="_blank" class="boton">
         Pagina de soporte Odín
+    </a>
+  </div>
+</div>
+    
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
